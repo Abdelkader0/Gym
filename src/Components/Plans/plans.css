@@ -26,17 +26,18 @@
 .plansContainer{
     display: flex;
     flex-direction: column;
-    position: relative;
     gap: 4rem;
     margin-top: -4rem;
     padding: 0 2rem;
+    position: relative;
+
 }
 
 .plans{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
 }
 
 .plan{
@@ -55,4 +56,37 @@
 .plan:nth-child(2){
     background: var(--planCard);
     transform: scale(1.1);
+}
+.plan>svg{
+    font-size: 3rem;
+    fill: orange;
+    width: 2rem;
+    height: 2rem;
+}
+
+.plans>:nth-child(2){
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.plan>:nth-child(3){
+    font-weight: bold;
+    font-size: 3rem;
+}
+.feature{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.feature>img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.plans>:nth-child(2)>svg{
+    fill: rgb(255, 255, 255);
+}
+.plans>:nth-child(2)>button{
+        fill: orange;
+    
 }
