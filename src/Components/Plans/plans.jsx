@@ -28,14 +28,12 @@ const Plans = () => {
                   <span key={i}>{feature}</span>
                 </div>
               ))}
-
-              <div>
+            </div>
+            {/* end planFeatures */}
+            <div>
                 <span>View more details-></span>
               </div>
               <button className="btn"> Join now </button>
-            </div>
-            {/* end planFeatures */}
-
           </div>
         ))}
         </div>
