@@ -69,12 +69,12 @@
 .arrows{
     display: flex;
     position: absolute;
-    gap: 1rem;
-    bottom: 1rem;
-    right: 13rem;
+    gap: .5rem;
+    bottom: 5rem;
+    right: 14.5rem;
 }
 .arrows>img{
-    width: 1.5rem;
+    width: 1rem;
     cursor: pointer;
 
 }
