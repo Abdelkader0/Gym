@@ -4,6 +4,7 @@ import Programs from './Components/Programs/Programs';
 import Plans from './Components/Plans/plans';
 import Reasons from './Components/Reasons/Reasons';
 import Testimonials from './Components/Testimonials/Testimonials';
+import Join from './Components/Join/Join';
 import './App.css';
 
 
@@ -15,6 +16,7 @@ function App() {
       <Plans/>
       <Reasons/>
       <Testimonials/>
+      <Join/>
     </div>
   );
 }
