@@ -5,6 +5,7 @@ import Plans from './Components/Plans/plans';
 import Reasons from './Components/Reasons/Reasons';
 import Testimonials from './Components/Testimonials/Testimonials';
 import Join from './Components/Join/Join';
+import Footer from './Components/Footer/Footer';
 import './App.css';
 
 
@@ -17,6 +18,7 @@ function App() {
       <Reasons/>
       <Testimonials/>
       <Join/>
+      <Footer/>
     </div>
   );
 }
