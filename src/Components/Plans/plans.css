@@ -20,9 +20,6 @@
     font-style: uppercase;
 }
 
-
-
-
 .plansContainer{
     display: flex;
     flex-direction: column;
@@ -30,6 +27,22 @@
     margin-top: -4rem;
     padding: 0 2rem;
     position: relative;
+
+}
+
+.plans-blur-l {
+    width: 32rem;
+    height: 23rem;
+    left: 0rem;
+    top: 6rem;
+
+}
+
+.plans-blur-r {
+    width: 32rem;
+    height: 23rem;
+    right: 0rem;
+    top: 10rem;
 
 }
 

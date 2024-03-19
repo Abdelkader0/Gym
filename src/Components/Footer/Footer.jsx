@@ -19,6 +19,9 @@ const Footer = () => {
           <img src={Logo} alt=''/>
         </div>
       </div>
+
+      <div className='blur footer-blur-l'></div>
+      <div className='blur footer-blur-r'></div>
     </div>
   ); 
 };

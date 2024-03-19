@@ -6,6 +6,8 @@ import './plans.css'
 const Plans = () => {
   return (
     <div className="plansContainer">
+        <div className='blur plans-blur-l'></div>
+        <div className='blur plans-blur-r'></div>
         <div className="plansHeader" style={{gap: '2rem'}}>
             <span className='stroke-text'>Ready to Start</span>
             <span>Your journy</span>
@@ -31,7 +33,7 @@ const Plans = () => {
             </div>
             {/* end planFeatures */}
             <div>
-                <span>View more details-></span>
+                <span>View more details</span>
               </div>
               <button className="btn"> Join now </button>
           </div>

@@ -11,7 +11,8 @@ import Calories from "../../assets/calories.png";
 const hero = () => {
   return (
     <div className="hero">
-        <div className="left-side">
+      <div className='blur hero-blur'></div>
+      <div className="left-side">
         <Header/>
 
         {/* the best Ad div Start */}
@@ -60,9 +61,9 @@ const hero = () => {
           <button className="btn">Learn More</button>
         </div>
         {/* HERO button End */}
-
-        </div>
-        <div className="right-side">
+      
+      </div>
+      <div className="right-side">
        <button className="btn">Join now</button>
 
 
@@ -84,12 +85,8 @@ const hero = () => {
             <span>Tracking</span>
           </div>
         </div>
-
-
-
-
-        </div>
-</div>
+      </div>
+    </div>
   )
 }
 
