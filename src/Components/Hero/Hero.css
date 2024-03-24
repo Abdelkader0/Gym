@@ -221,8 +221,9 @@
         background: none;
     }
     .heart-rate {
+        height: 6rem;
         left: 1rem;
-        top: 2rem;
+        top: 0rem;
     }
     .calories {
         position: relative;
