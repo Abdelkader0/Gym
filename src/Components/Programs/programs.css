@@ -57,3 +57,20 @@
     background-color: var(--planCard);
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    .programs-header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        font-size: x-large;
+        align-items: center;
+        margin-top: 0rem;
+    }
+    .program-categorie {
+        flex-direction: column;
+    }
+    .categorie:hover {
+        background-color: var(--orange);
+    }
+}
