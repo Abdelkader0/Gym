@@ -10,6 +10,7 @@ import {motion} from "framer-motion";
 
 const hero = () => {
   const transition = {type: "spring", duration: 5}
+  const mobile = window.innerWidth<=768 ? true: false;
   return (
     <div className="hero">
       <div className='blur hero-blur'></div>
@@ -19,7 +20,7 @@ const hero = () => {
         {/* the best Ad div Start */}
         <div className="the-Best-ad">
           <motion.div
-            initial= {{left: '238px'}}
+            initial= {{left: mobile? '165px': '238px'}}
             whileInView= {{left: "8px"}}
             transition= {{...transition, type: "tween"}}
           ></motion.div>
@@ -31,13 +32,13 @@ const hero = () => {
         <div className="hero-text">
           <div>
             <span className='stroke-text'>Shape</span>
-            <span>Your</span>
+            <span> Your</span>
           </div>
           <div>
             <span>Ideal Body</span>
           </div>
           <div className="span">
-             Athletes and bodybuilders may aim for even lower levels, typically in the range of 4-10%. For females, a body fat percentage of approxim.
+             Athletes and body builders may aim for even lower levels, typically in the range of 4-10%. For females, a body fat percentage of approxim.
            </div>
         </div>
         {/* the hero-text div End */}
@@ -69,7 +70,7 @@ const hero = () => {
       
       </div>
       <div className="right-side">
-       <button className="btn">Join now</button>
+       <button className="btn">Register now</button>
 
 
         <motion.div className="heart-rate"

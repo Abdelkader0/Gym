@@ -6,15 +6,15 @@
     width: 10rem;
     height: 3rem;
 }
-.header-menu {
+.nav-menu {
     list-style: none;
     display: flex;
     gap: 2rem;
     color: white;
 }
-.header-menu li {
+.nav-menu li{
     cursor: pointer;
 }
-.header-menu li:hover {
+.nav-menu li:hover {
     color: var(--orange);
 }
