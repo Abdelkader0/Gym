@@ -103,3 +103,20 @@
         fill: orange;
     
 }
+
+@media screen and (max-width: 768px) {
+    .plans, .plansHeader {
+       flex-direction: column; 
+    }
+    .plansHeader > :nth-child(1) {
+        margin-top: 2rem;
+    }
+    .plansHeader > :nth-child(2) {
+        text-align: center;
+
+    }
+    .plan {
+        overflow: hidden;
+        max-width: fit-content;
+    }
+}
