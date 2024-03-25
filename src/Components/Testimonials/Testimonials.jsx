@@ -15,7 +15,7 @@ const Testimonials = () => {
         <div className="left-t">
             <span>Testimonials</span>
             <span className='stroke-text'>What they Say</span>
-            <span>AboutUS</span>
+            <span>About US</span>
             <motion.span
                 key= {selected}
                 initial= {{opacity: 0, x: -100}}
