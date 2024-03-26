@@ -31,7 +31,7 @@ const Plans = () => {
                   </div>
                 ))}
               </div>
-            {/* end planFeatures */}
+                   {/* end planFeatures */}
               <div>
                 <span>View more details</span>
               </div>

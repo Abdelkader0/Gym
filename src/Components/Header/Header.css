@@ -18,3 +18,26 @@
 .nav-menu li:hover {
     color: var(--orange);
 }
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    .mobile-menu {
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        padding: 1rem;
+        width: 28%;
+        background-color: var(--appColor); 
+        z-index: 1;
+    }
+    .mobile-menu li {
+        list-style: none;
+        margin-bottom: 1rem;
+    }
+    .mobile-menu li:hover {
+        cursor: pointer;
+        color: var(--orange);
+    }
+}
