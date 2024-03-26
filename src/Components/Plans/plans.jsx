@@ -5,7 +5,7 @@ import './plans.css'
 
 const Plans = () => {
   return (
-    <div className="plansContainer">
+    <div className="plansContainer" id='plans'>
         <div className='blur plans-blur-l'></div>
         <div className='blur plans-blur-r'></div>
         <div className="plansHeader" style={{gap: '2rem'}}>
