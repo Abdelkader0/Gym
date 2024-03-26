@@ -29,7 +29,7 @@
         right: 0px;
         padding: 1rem;
         width: 28%;
-        background-color: var(--appColor); 
+        background-color: rgba(178, 70, 7, 0.721); 
         z-index: 1;
     }
     .mobile-menu li {
@@ -38,6 +38,6 @@
     }
     .mobile-menu li:hover {
         cursor: pointer;
-        color: var(--orange);
+        color: orange;
     }
 }
