@@ -18,6 +18,10 @@ const Footer = () => {
         <div className='logo-f'>
           <img src={Logo} alt=''/>
         </div>
+
+        <div className='copyright'>
+          All rights reserved by Ahmed & Marian &copy; ALX-2024
+        </div>
       </div>
 
       <div className='blur footer-blur-l'></div>
