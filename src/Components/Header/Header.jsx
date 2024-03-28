@@ -42,18 +42,69 @@ const Header = () => {
       {!mobile && (
         <ul className="nav-menu">
           <li onClick={() => setMenuOpened(false)}>
-            <NavLink
-              to="/"
-              // className={({ isActive }) => (isActive ? 'active' : '') }
-              onClick={() => setMenuOpened(false)} // No need to setActiveLink here
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="home"
+              span={true}
+              smooth={true}
             >
-              Home
-            </NavLink>
+              <NavLink
+                to="/"
+                // className={({ isActive }) => (isActive ? 'active' : '') }
+                onClick={() => setMenuOpened(false)} // No need to setActiveLink here
+              >
+                Home
+              </NavLink>
+            </Link>
           </li>
-          <li onClick={() => setMenuOpened(false)}></li>
-          <li onClick={() => setMenuOpened(false)}>Choose us</li>
-          <li onClick={() => setMenuOpened(false)}>Plans</li>
-          <li onClick={() => setMenuOpened(false)}>Testimonials</li>
+          <li onClick={() => setMenuOpened(false)}>
+            {" "}
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="reasons"
+              span={true}
+              smooth={true}
+            >
+              <NavLink
+                to="/"
+                onClick={() => setMenuOpened(false)} // No need to setActiveLink here
+              >
+                Choose us
+              </NavLink>
+            </Link>
+          </li>
+          <li onClick={() => setMenuOpened(false)}>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="plans"
+              span={true}
+              smooth={true}
+            >
+              <NavLink
+                to="/"
+                onClick={() => setMenuOpened(false)} // No need to setActiveLink here
+              >
+                Plans
+              </NavLink>
+            </Link>
+          </li>
+
+          <li onClick={() => setMenuOpened(false)}>
+            {" "}
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="testimonials"
+              span={true}
+              smooth={true}
+            >
+              <NavLink
+                to="/"
+                onClick={() => setMenuOpened(false)} // No need to setActiveLink here
+              >
+                Testimonials
+              </NavLink>
+            </Link>
+          </li>
           <li onClick={() => setMenuOpened(false)}>
             <NavLink
               to="/news"
