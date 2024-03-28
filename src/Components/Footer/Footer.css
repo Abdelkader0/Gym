@@ -9,15 +9,17 @@
 .footer {
     padding: 1rem 2rem;
     display: flex;
+    margin-top: 4rem;
     flex-direction: column;
     gap: 4rem;
     align-items: center;
     justify-content: center;
-    height: 20rem;
+    height: 6rem;
 }
 
 .social-links {
     display: flex;
+    margin-top: 4rem;
     gap: 4rem;
 }
 
@@ -33,8 +35,8 @@
 
 .copyright {
     color: var(--orange);
-    font-weight: bold;
     font-size: 15px;
+    top: 2rem;
 }
 
 .footer-blur-l {

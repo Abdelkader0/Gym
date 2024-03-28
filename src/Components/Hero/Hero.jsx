@@ -7,11 +7,16 @@ import hero_image_back from "../../assets/hero_image_back.png";
 import Heart from "../../assets/heart.png";
 import Calories from "../../assets/calories.png";
 import {motion} from "framer-motion";
-import NumberCounter from "number-counter"
+import NumberCounter from "number-counter";
+
+function openBmiCalculatorInNewWindow() {
+  window.open('/bmi-calculator', '_blank');
+}
 
 const hero = () => {
   const transition = {type: "spring", duration: 5}
   const mobile = window.innerWidth<=768 ? true: false;
+
   return (
     <div className="hero" id='home'>
       <div className='blur hero-blur'></div>
@@ -77,8 +82,11 @@ const hero = () => {
       
       </div>
       <div className="right-side">
-       <button className="btn">Register now</button>
-
+        <div className='right-btn'>
+          <button className="btn"
+            onClick={openBmiCalculatorInNewWindow}>Calculate BMI</button>
+          <button className="btn"><a href='#join-us'>Register now</a></button>
+        </div>
 
         <motion.div className="heart-rate"
           initial= {{right: "-1rem"}}

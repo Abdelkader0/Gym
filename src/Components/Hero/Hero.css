@@ -16,7 +16,6 @@
     background-color: var(--orange);
 }
 
-
 .the-Best-ad {
     margin-top: 4rem;
     color: white;
@@ -98,11 +97,27 @@
     border: 2px solid var(--orange);
 }
 
-.right-side>.btn{
-    position: absolute;
-    right: 3rem;
+.right-btn {
+    right: 12rem;
     top: 2rem;
-    color: black;
+    gap: rem;
+    background-color: var(--darkGrey);
+    width: fit-content;
+    padding: 1rem;
+    align-items: start;
+    position: absolute;
+    color: white;
+}
+.right-btn>:nth-of-type(1) {
+    width: 8rem;
+    background-color: transparent;
+    border: 2px solid var(--orange);
+}
+ .right-btn>:nth-child(2){
+    background-color: var(--orange);
+    
+    width: 8rem;
+    border: 2px solid var(--orange);
 }
 
 .heart-rate{
