@@ -13,11 +13,14 @@ function News({ setActiveLink }) {
 
 
   useEffect(() => {
-    fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=f08e753c01754892a375d8705f02c420&${category}`)
+    fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=f08e753c01754892a375d8705f02c420&category=${category}`)
     .then(res => res.json())
-    .then(data => setItems(data.articles)); 
+    .then(data => {setItems(data.articles)
+      console.log("data",data.articles)} 
+    ,console.log("items",items));
   }, [category]);
-
+  //   console.log("items",items);
+  //  console.log("category",category);
   return (
     <div className="App">
         <Header />
