@@ -25,7 +25,9 @@ function News({ setActiveLink }) {
   //  console.log("category",category);
   return (
     <div className="App">
-      <Header />
+      <div className="header">
+        <Header />
+      </div>
       <Menu active={active} setActive={setActive} setCategory={setCategory} />
       <NewsGrid items={items} /> {/* Pass news items to NewsGrid */}
     </div>
