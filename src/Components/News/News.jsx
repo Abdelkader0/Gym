@@ -6,7 +6,6 @@ import { useLocation } from "react-router-dom";
 import "./News.css";
 
 function News({ setActiveLink }) {
-  const location = useLocation();
   const [items, setItems] = useState([]);
   const [active, setActive] = useState(1);
   const [category, setCategory] = useState("sports");
