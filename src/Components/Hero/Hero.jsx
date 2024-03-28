@@ -6,8 +6,6 @@ import hero_image from "../../assets/hero_image.png";
 import hero_image_back from "../../assets/hero_image_back.png";
 import Heart from "../../assets/heart.png";
 import Calories from "../../assets/calories.png";
-<<<<<<< HEAD
-=======
 
 import {motion} from "framer-motion";
 import NumberCounter from "number-counter";
@@ -20,7 +18,6 @@ const hero = () => {
   const transition = {type: "spring", duration: 5}
   const mobile = window.innerWidth<=768 ? true: false;
 
->>>>>>> 67cdccce4b38b6e43d34ece0d9d7bc8f010cc221
 import { motion } from "framer-motion";
 import NumberCounter from "number-counter";
 
