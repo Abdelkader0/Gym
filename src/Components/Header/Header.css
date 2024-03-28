@@ -1,7 +1,17 @@
 .header {
     display: flex;
+    position: fixed; 
     justify-content: space-between;
-}
+    z-index: 1000;
+    width: 70%;
+    top: 0;
+  }
+  
+  .header-scrolled {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    transition: background-color 0.3s ease; /* Add a transition */
+  }
+
 .logo {
     width: 10rem;
     height: 3rem;
@@ -30,14 +40,18 @@
         padding: 1rem;
         width: 28%;
         background-color: rgba(178, 70, 7, 0.721); 
-        z-index: 1;
+        z-index: 100;
     }
-    .mobile-menu li {
+    .mobile-menu li{
         list-style: none;
         margin-bottom: 1rem;
     }
     .mobile-menu li:hover {
         cursor: pointer;
         color: orange;
+    }
+    .mobile-menu a{
+        text-decoration: none;
+        color: white;
     }
 }
