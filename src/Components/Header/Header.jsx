@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from 'react'
 import './Header.css'
 import Logo from '../../assets/logo.png';
@@ -12,7 +11,6 @@ import Logo from "../../assets/logo.png";
 import Bars from "../../assets/bars.png";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
->>>>>>> 081016d3b5709f94f5e88c5a8de56b4e20a8331c
 
 const Header = () => {
   const mobile = window.innerWidth <= 768 ? true : false;
@@ -29,7 +27,6 @@ const Header = () => {
   }, []);
 
   return (
-<<<<<<< HEAD
     <div className="header">
         <img src={Logo} alt="" className="logo" />
         {mobile && (
@@ -133,7 +130,7 @@ const Header = () => {
             </li>
           </ul>
         )}
-=======
+
     <div className={`header ${isScrolled ? "header-scrolled" : ""}`}>
       <img src={Logo} alt="" className="logo" />
       {mobile && (
@@ -315,7 +312,6 @@ const Header = () => {
           </li>
         </ul>
       )}
->>>>>>> 081016d3b5709f94f5e88c5a8de56b4e20a8331c
     </div>
   );
 };
