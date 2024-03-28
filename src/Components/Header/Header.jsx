@@ -57,11 +57,12 @@ const Header = () => {
               </NavLink>
             </Link>
           </li>
+          
           <li onClick={() => setMenuOpened(false)}>
             {" "}
             <Link
               onClick={() => setMenuOpened(false)}
-              to="reasons"
+              to="programs"
               span={true}
               smooth={true}
             >
@@ -69,11 +70,12 @@ const Header = () => {
                 to="/"
                 onClick={() => setMenuOpened(false)} // No need to setActiveLink here
               >
-                Choose us
+                Programs
               </NavLink>
             </Link>
           </li>
           <li onClick={() => setMenuOpened(false)}>
+            {" "}
             <Link
               onClick={() => setMenuOpened(false)}
               to="plans"
@@ -85,6 +87,21 @@ const Header = () => {
                 onClick={() => setMenuOpened(false)} // No need to setActiveLink here
               >
                 Plans
+              </NavLink>
+            </Link>
+          </li>
+          <li onClick={() => setMenuOpened(false)}>
+            <Link
+              onClick={() => setMenuOpened(false)}
+              to="reasons"
+              span={true}
+              smooth={true}
+            >
+              <NavLink
+                to="/"
+                onClick={() => setMenuOpened(false)} // No need to setActiveLink here
+              >
+                Choose us
               </NavLink>
             </Link>
           </li>
