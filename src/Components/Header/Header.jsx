@@ -3,7 +3,6 @@ import './Header.css'
 import Logo from '../../assets/logo.png';
 import Bars from '../../assets/bars.png';
 import { Link } from 'react-scroll';
-=======
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./Header.css";
