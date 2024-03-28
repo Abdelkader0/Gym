@@ -18,14 +18,13 @@ const hero = () => {
   const transition = {type: "spring", duration: 5}
   const mobile = window.innerWidth<=768 ? true: false;
 
-=======
 import { motion } from "framer-motion";
 import NumberCounter from "number-counter";
 
 const hero = () => {
   const transition = { type: "spring", duration: 5 };
   const mobile = window.innerWidth <= 768 ? true : false;
->>>>>>> 081016d3b5709f94f5e88c5a8de56b4e20a8331c
+  
   return (
     <div className="hero" id="home">
       <div className="blur hero-blur"></div>
@@ -91,7 +90,6 @@ const hero = () => {
         {/* HERO button End */}
       </div>
       <div className="right-side">
-<<<<<<< HEAD
         <div className='right-btn'>
           <button className="btn"
             onClick={openBmiCalculatorInNewWindow}>Calculate BMI</button>
@@ -105,7 +103,6 @@ const hero = () => {
             <img src={Heart} alt="heart"/>
             <span>Heart Rate</span>
             <span>Training</span>
-=======
         <button className="btn">Register now</button>
 
         <motion.div
@@ -117,7 +114,6 @@ const hero = () => {
           <img src={Heart} alt="heart" />
           <span>Heart Rate</span>
           <span>Training</span>
->>>>>>> 081016d3b5709f94f5e88c5a8de56b4e20a8331c
         </motion.div>
 
         <img src={hero_image} alt="hero_image" className="hero-image" />
