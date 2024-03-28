@@ -6,26 +6,12 @@ import hero_image from "../../assets/hero_image.png";
 import hero_image_back from "../../assets/hero_image_back.png";
 import Heart from "../../assets/heart.png";
 import Calories from "../../assets/calories.png";
-<<<<<<< HEAD
-import {motion} from "framer-motion";
-import NumberCounter from "number-counter";
-
-function openBmiCalculatorInNewWindow() {
-  window.open('/bmi-calculator', '_blank');
-}
-
-const hero = () => {
-  const transition = {type: "spring", duration: 5}
-  const mobile = window.innerWidth<=768 ? true: false;
-
-=======
 import { motion } from "framer-motion";
 import NumberCounter from "number-counter";
 
 const hero = () => {
   const transition = { type: "spring", duration: 5 };
   const mobile = window.innerWidth <= 768 ? true : false;
->>>>>>> 081016d3b5709f94f5e88c5a8de56b4e20a8331c
   return (
     <div className="hero" id="home">
       <div className="blur hero-blur"></div>
@@ -91,21 +77,6 @@ const hero = () => {
         {/* HERO button End */}
       </div>
       <div className="right-side">
-<<<<<<< HEAD
-        <div className='right-btn'>
-          <button className="btn"
-            onClick={openBmiCalculatorInNewWindow}>Calculate BMI</button>
-          <button className="btn"><a href='#join-us'>Register now</a></button>
-        </div>
-
-        <motion.div className="heart-rate"
-          initial= {{right: "-1rem"}}
-          whileInView= {{right: "4rem"}}
-          transition= {{...transition, type: "tween" }}>
-            <img src={Heart} alt="heart"/>
-            <span>Heart Rate</span>
-            <span>Training</span>
-=======
         <button className="btn">Register now</button>
 
         <motion.div
@@ -117,7 +88,6 @@ const hero = () => {
           <img src={Heart} alt="heart" />
           <span>Heart Rate</span>
           <span>Training</span>
->>>>>>> 081016d3b5709f94f5e88c5a8de56b4e20a8331c
         </motion.div>
 
         <img src={hero_image} alt="hero_image" className="hero-image" />
