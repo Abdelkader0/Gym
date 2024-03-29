@@ -8,6 +8,7 @@ import Home from './Components/Home';
 // import Join from './Components/Join/Join';
 // import Footer from './Components/Footer/Footer';
 import News from './Components/News/News'
+import BmiCalculator from './Components/Calculate BMI/BmiCalculator'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
@@ -18,7 +19,8 @@ function App() {
     <div className="App">
             <Routes>
                 <Route path="/news" element={<News/>} /> 
-                <Route path="/" element={<Home />} /> 
+                <Route path="/" element={<Home />} />
+                <Route path="/bmi" element={<BmiCalculator/>} />
             </Routes>
         
       {/* <Hero/>

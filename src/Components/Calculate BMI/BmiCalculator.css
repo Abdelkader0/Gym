@@ -1,8 +1,18 @@
 .BmiCalculator {
     display: flex;
     justify-content: space-between;
+    background-color: black;
+    
 }
-
+.header {
+    display: flex;
+    position: fixed; 
+    z-index: 1000;
+    width: 90%;
+    top: 0;
+    gap: 9rem;
+  }
+  
 .title {
     margin-left: 1.2rem;
     font-size: 50px;

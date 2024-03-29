@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import trainer from '../../assets/trainer.png';
 import rightArrow from '../../assets/rightArrow.png'
+import Header from "../Header/Header";
+import "../Header/Header.css";
+import '../../App.css';
 
 function BmiCalculator() {
     const [age, setAge] = useState('');
@@ -49,6 +52,7 @@ function BmiCalculator() {
 
     return (
         <div className='BmiCalculator'>
+            <Header />
             <div className="left-container">
               <div className='stroke-text title'>Calculate</div>
               <div className='title'>Your Body</div>
