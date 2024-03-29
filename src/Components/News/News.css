@@ -1,15 +1,4 @@
-.header{
-  padding: 2rem;
-  padding-top: 1.5em;
-  flex: 3 1;
-  display: flex;
-  gap: 9rem;
-}
 
-.title {
-  text-align: center;
-  margin: 4rem 0;
-}
 .menu {
   display: flex;
   justify-content: center;

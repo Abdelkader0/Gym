@@ -1,6 +1,7 @@
 .header {
     display: flex;
-    position: fixed; 
+    position: fixed;
+    padding: 2rem;
     z-index: 1000;
     width: 90%;
     top: 0;
@@ -43,9 +44,10 @@
     .mobile-menu {
         position: absolute;
         top: 50px;
-        right: 0px;
+        right: 20px;
         padding: 1rem;
         width: 28%;
+        height: 100vh;
         background-color: rgba(178, 70, 7, 0.721); 
         z-index: 100;
     }
@@ -53,7 +55,7 @@
         list-style: none;
         margin-bottom: 1rem;
     }
-    .mobile-menu li:hover {
+    .mobile-menu a:hover {
         cursor: pointer;
         color: orange;
     }

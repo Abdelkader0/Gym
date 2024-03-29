@@ -4,6 +4,7 @@ import Menu from "./Components/Menu";
 import NewsGrid from "./Components/NewsGrid";
 import { useLocation } from "react-router-dom";
 import "./News.css";
+import "../Header/Header.css";
 
 function News({ setActiveLink }) {
   const [items, setItems] = useState([]);
@@ -24,7 +25,7 @@ function News({ setActiveLink }) {
   //  console.log("category",category);
   return (
     <div className="App">
-      <div className="header">
+      <div className="head">
         <Header />
       </div>
       <Menu active={active} setActive={setActive} setCategory={setCategory} />

@@ -9,17 +9,15 @@ import Calories from "../../assets/calories.png";
 import { motion } from "framer-motion";
 import NumberCounter from "number-counter";
 
-
 const hero = () => {
   const transition = { type: "spring", duration: 5 };
   const mobile = window.innerWidth <= 768 ? true : false;
 
   return (
     <div className="hero" id="home">
+      <Header />
       <div className="blur hero-blur"></div>
       <div className="left-side">
-        <Header />
-
         {/* the best Ad div Start */}
         <div className="the-Best-ad">
           <motion.div
@@ -79,8 +77,6 @@ const hero = () => {
         {/* HERO button End */}
       </div>
       <div className="right-side">
-
-
         <motion.div
           className="heart-rate"
           initial={{ right: "-1rem" }}

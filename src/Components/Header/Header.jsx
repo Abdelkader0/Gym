@@ -26,23 +26,6 @@ const Header = () => {
 
   return (
     <div className="header">
-      {mobile && (
-        <div
-          style={{
-            backgroundColor: "var(--appColor)",
-            padding: "0.5rem",
-            borderRadius: "5px",
-          }}
-          onClick={() => setMenuOpened(true)}
-        >
-          <img
-            src={Bars}
-            alt=""
-            style={{ width: "1.5rem", height: "1.5rem" }}
-          />
-        </div>
-      )}
-
       <div className={`header ${isScrolled ? "header-scrolled" : ""}`}>
         <img src={Logo} alt="" className="logo" />
         {mobile && (
@@ -61,8 +44,11 @@ const Header = () => {
             />
           </div>
         )}
+        
+
         {!mobile && (
           <ul className="nav-menu">
+            
             <li onClick={() => setMenuOpened(false)}>
               <Link
                 onClick={() => setMenuOpened(false)}
@@ -153,8 +139,24 @@ const Header = () => {
                 News
               </NavLink>
             </li>
+            <div className="right-btn" onClick={() => setMenuOpened(false)}>
+              {/* make route here to BMI */}
+              <button className="btn">
+                <NavLink
+                  to="/bmi"
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                  onClick={() => setMenuOpened(false)} // No need to setActiveLink here
+                >
+                  BmiCalculator
+                </NavLink>
+              </button>
+              <button className="btn">
+                <a href="#join-us">Register now</a>
+              </button>
+            </div>
           </ul>
         )}
+
         {mobile && menuOpened && (
           <ul className="mobile-menu">
             <li>
@@ -222,23 +224,24 @@ const Header = () => {
                 News
               </NavLink>
             </li>
-          </ul>
-        )}
-        <div className="right-btn">
-          {/* make route here to BMI */}
-          <button className="btn">
+            <div className="right-btn" style={{ flexDirection: "column" , top: "240px",right: "20px"}}>
+              {/* make route here to BMI */}
+              <button className="btn">
                 <NavLink
                   to="/bmi"
-                  // className={({ isActive }) => (isActive ? 'active' : '') }
+                  className={({ isActive }) => (isActive ? "active" : "")}
                   onClick={() => setMenuOpened(false)} // No need to setActiveLink here
                 >
                   BmiCalculator
                 </NavLink>
-          </button>
-          <button className="btn">
-            <a href="#join-us">Register now</a>
-          </button>
-        </div>
+              </button>
+              <button className="btn">
+                <a href="#join-us">Register now</a>
+              </button>
+            </div>
+          </ul>
+        )}
+
       </div>
     </div>
   );
