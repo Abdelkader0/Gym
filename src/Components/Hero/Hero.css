@@ -98,15 +98,15 @@
 }
 
 .right-btn {
-    right: 12rem;
-    top: 2rem;
-    gap: rem;
+    top: 1rem;
+    gap: 1rem;
     background-color: var(--darkGrey);
-    width: fit-content;
     padding: 1rem;
-    align-items: start;
     position: absolute;
     color: white;
+    display: flex;
+    flex-direction: row;
+    right: 0;
 }
 .right-btn>:nth-of-type(1) {
     width: 8rem;
@@ -115,9 +115,15 @@
 }
  .right-btn>:nth-child(2){
     background-color: var(--orange);
-    
     width: 8rem;
     border: 2px solid var(--orange);
+}
+.right-btn a{
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    color: white;
+    font-weight: bold;
 }
 
 .heart-rate{

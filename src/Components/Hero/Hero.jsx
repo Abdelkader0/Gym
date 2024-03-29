@@ -9,9 +9,6 @@ import Calories from "../../assets/calories.png";
 import { motion } from "framer-motion";
 import NumberCounter from "number-counter";
 
-function openBmiCalculatorInNewWindow() {
-  window.open("/bmi-calculator", "_blank");
-}
 
 const hero = () => {
   const transition = { type: "spring", duration: 5 };
@@ -82,15 +79,7 @@ const hero = () => {
         {/* HERO button End */}
       </div>
       <div className="right-side">
-        <div className="right-btn">
-          {/* make route here to BMI */}
-          <button className="btn" onClick={openBmiCalculatorInNewWindow}>
-            Calculate BMI
-          </button>
-          <button className="btn">
-            <a href="#join-us">Register now</a>
-          </button>
-        </div>
+
 
         <motion.div
           className="heart-rate"
@@ -104,9 +93,7 @@ const hero = () => {
           <button className="btn">Register now</button>
         </motion.div>
 
-
         <img src={hero_image} alt="hero_image" className="hero-image" />
-
       </div>
     </div>
   );

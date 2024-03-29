@@ -1,10 +1,10 @@
 .header {
     display: flex;
     position: fixed; 
-    justify-content: space-between;
     z-index: 1000;
-    width: 70%;
+    width: 90%;
     top: 0;
+    gap: 9rem;
   }
   
   .header-scrolled {
@@ -25,8 +25,15 @@
 .nav-menu li{
     cursor: pointer;
 }
-.nav-menu li:hover {
+.nav-menu a:hover {
     color: var(--orange);
+}
+.nav-menu a{
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    color: white;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
