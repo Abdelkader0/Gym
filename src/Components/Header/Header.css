@@ -1,7 +1,7 @@
 .header {
     display: flex;
     position: fixed;
-    padding: 2rem;
+    padding-top: 1rem;
     z-index: 1000;
     width: 90%;
     top: 0;
@@ -37,10 +37,11 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 250px) {
     .nav-menu {
-        display: none;
+        display: flex;
     }
+    
     .mobile-menu {
         position: absolute;
         top: 50px;

@@ -32,7 +32,7 @@ const Header = () => {
           <div
             style={{
               backgroundColor: "var(--appColor)",
-              padding: "0.5rem",
+              padding: "0.2rem",
               borderRadius: "5px",
             }}
             onClick={() => setMenuOpened(true)}
