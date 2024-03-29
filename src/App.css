@@ -69,7 +69,7 @@ input::-webkit-inner-spin-button {
 ::-webkit-scrollbar{
   display: none;
 }
-img,p,span,div,button,li,ul,ol,textarea,input {  
+img,a,p,span,div,button,li,ul,ol,textarea,input {  
   user-drag: none;  
   user-select: none;
   -moz-user-select: none;
