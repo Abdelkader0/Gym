@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './BmiCalculator.css';
 import trainer from '../../assets/trainer.png';
 import rightArrow from '../../assets/rightArrow.png'
 
@@ -100,4 +99,4 @@ function BmiCalculator() {
     );
 };
 
-export default BmiCalculator
+export default BmiCalculator;
