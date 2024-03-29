@@ -1,19 +1,11 @@
-.BmiCalculator {
-    display: flex;
-    width: 100vh;
-    height: 100vh;
-}
 
-
-.left-container {
+.mainPage {
     padding-top: 11rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     font-size: medium;
     font-weight: bold;
-    height: 30px;
-    width: 40rem;
 }
 
 .age_gender {

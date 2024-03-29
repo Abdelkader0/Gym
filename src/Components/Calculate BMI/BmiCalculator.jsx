@@ -4,6 +4,9 @@ import rightArrow from "../../assets/rightArrow.png";
 import Header from "../Header/Header";
 import "../Header/Header.css";
 import "./BmiCalculator.css";
+import Footer from '../Footer/Footer';
+import Join from '../Join/Join';
+
 
 function BmiCalculator() {
   const [age, setAge] = useState("");
@@ -53,7 +56,7 @@ function BmiCalculator() {
   return (
     <div className="App">
       <Header />
-      <div className="left-container">
+      <div className="mainPage">
         <div className="btn age_gender">
           <label>Age:</label>
           <input
@@ -112,9 +115,8 @@ function BmiCalculator() {
           </p>
         </div>
       </div>
-      <div className="right-container">
-        <img src={hero_image} alt="" />
-      </div>
+        <Join />
+        <Footer />
     </div>
   );
 }
