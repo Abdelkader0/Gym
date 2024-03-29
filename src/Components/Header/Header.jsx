@@ -9,8 +9,11 @@ import "../Hero/Hero.css";
 const Header = () => {
   const mobile = window.innerWidth <= 768 ? true : false;
   const [menuOpened, setMenuOpened] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const handleClick = () => {
+    setMenuOpened(!menuOpened); // Toggle the state
+  };
 
+  const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
@@ -35,7 +38,7 @@ const Header = () => {
               padding: "0.2rem",
               borderRadius: "5px",
             }}
-            onClick={() => setMenuOpened(true)}
+            onClick={handleClick}
           >
             <img
               src={Bars}
@@ -47,7 +50,7 @@ const Header = () => {
         
 
         {!mobile && (
-          <ul className="nav-menu">
+          <ul className="nav-menu"  onClick={handleClick}>
             
             <li onClick={() => setMenuOpened(false)}>
               <Link
@@ -58,7 +61,6 @@ const Header = () => {
               >
                 <NavLink
                   to="/"
-                  // className={({ isActive }) => (isActive ? 'active' : '') }
                   onClick={() => setMenuOpened(false)} // No need to setActiveLink here
                 >
                   Home
@@ -158,7 +160,7 @@ const Header = () => {
         )}
 
         {mobile && menuOpened && (
-          <ul className="mobile-menu">
+          <ul className="mobile-menu" onClick={handleClick}>
             <li>
               <Link
                 onClick={() => setMenuOpened(false)}

@@ -1,11 +1,13 @@
 .header {
     display: flex;
     position: fixed;
-    padding-top: 1rem;
+    margin: 0 39px;
+    padding-top: 2rem;
     z-index: 1000;
     width: 90%;
     top: 0;
     gap: 9rem;
+    
   }
   
   .header-scrolled {
@@ -56,7 +58,41 @@
         list-style: none;
         margin-bottom: 1rem;
     }
-    .mobile-menu a:hover {
+    .mobile-menu li:hover {
+        cursor: pointer;
+        color: orange;
+    }
+    .mobile-menu a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .nav-menu {
+        display: flex;
+    }
+    
+    .mobile-menu {
+        position: absolute;
+        top: 50px;
+        padding: 1rem;
+        left: 110px;
+        width: 70%;
+        height: 100vh;
+        background-color: rgba(178, 70, 7, 0.721); 
+        z-index: 100;
+    }
+    .mobile-menu li{
+        list-style: none;
+        margin-bottom: 1rem;
+    }
+    .mobile-menu li:hover {
         cursor: pointer;
         color: orange;
     }
