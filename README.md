@@ -49,5 +49,6 @@ Open an issue or contact maintainers for questions or feedback.
 
 **all right Reserved**
 @Abdelkader0 & @Mariangithubit
+
 **Alx Front-end Graduation project - 2024**
 
