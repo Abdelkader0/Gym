@@ -1,5 +1,6 @@
 .Footer-container {
     position: relative;
+    height: 253px;
 }
 
 .Footer-container > hr {
@@ -35,8 +36,9 @@
 
 .copyright {
     color: var(--orange);
-    font-size: 15px;
-    top: 2rem;
+    top: -4rem;
+    font-weight: bold;
+    position: relative;
 }
 
 .footer-blur-l {

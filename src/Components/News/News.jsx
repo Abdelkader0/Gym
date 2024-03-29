@@ -5,6 +5,8 @@ import NewsGrid from "./Components/NewsGrid";
 import { useLocation } from "react-router-dom";
 import "./News.css";
 import "../Header/Header.css";
+import Footer from "../Footer/Footer";
+import Join from "../Join/Join";
 
 function News({ setActiveLink }) {
   const [items, setItems] = useState([]);
@@ -30,6 +32,8 @@ function News({ setActiveLink }) {
       </div>
       <Menu active={active} setActive={setActive} setCategory={setCategory} />
       <NewsGrid items={items} /> {/* Pass news items to NewsGrid */}
+      <Join />
+      <Footer />
     </div>
   );
 }
