@@ -52,10 +52,10 @@
   }
 
   .btn.age_gender label{
-    margin-left: px;
+    margin-left: -20px;
   } 
 
-  .btn.age_gender inpu:nth-last-child(1) {
+  .btn.age_gender input:nth-last-child(1) {
     margin-right: 7rem;
     width: 3rem;
   }
