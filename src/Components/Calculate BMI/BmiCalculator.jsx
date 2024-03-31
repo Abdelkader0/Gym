@@ -6,7 +6,7 @@ import "../Header/Header.css";
 import "./BmiCalculator.css";
 import Footer from "../Footer/Footer";
 import Join from "../Join/Join";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 function BmiCalculator() {
   const [age, setAge] = useState("");
@@ -16,43 +16,7 @@ function BmiCalculator() {
   const [weight, setWeight] = useState("");
   const [bmiValue, setBmiValue] = useState("");
   const [bmiMessage, setBmiMessage] = useState("");
-  const [selected, setSelected] = useState(0);
-  const transition = {type: "spring", duration: 6}
-
-  const splitImage = () => {
-    const image = document.querySelector(".main-image");
-    const { width, height } = image.getBoundingClientRect();
-    const numCols = 3;
-    const numRows = 3;
-    const totalSlices = numCols * numRows;
-    
-    const sliceWidth = width / numCols;
-    const sliceHeight = height / numRows;
-
-    const slices = [];
-
-    for (let row = 0; row < numRows; row++) {
-      for (let col = 0; col < numCols; col++) {
-        const slice = document.createElement("div");
-        slice.classList.add("image-slice");
-        slice.style.backgroundImage = `url(${BMIChart})`;
-        slice.style.backgroundSize = `${width}px ${height}px`;
-        slice.style.backgroundPosition = `-${col * sliceWidth}px -${row * sliceHeight}px`;
-        slice.style.width = sliceWidth + "px";
-        slice.style.height = sliceHeight + "px";
-        slices.push(slice);
-        document.querySelector(".image-container").appendChild(slice);
-      }
-    }
-
-    // Animate the slices back to form the complete image
-    slices.forEach((slice, index) => {
-      setTimeout(() => {
-        slice.style.transform = "translate(0, 0)";
-        slice.style.opacity = 1;
-      }, index * 100);
-    });
-  };
+  const transition = {type: "spring", duration: 6};
 
   const calculateBmi = () => {
     if (height && weight && age) {
@@ -105,7 +69,6 @@ function BmiCalculator() {
 
           <div className="calculator-form">
             <motion.span
-                key= {selected}
                 initial= {{opacity: 0, x: -100}}
                 animate= {{opacity: 1, x: 0}}
                 transition= {{transition}}
@@ -200,6 +163,6 @@ function BmiCalculator() {
       <Footer />
     </div>
   );
-}
+};
 
 export default BmiCalculator;
