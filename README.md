@@ -52,3 +52,7 @@ Got questions or feedback? Hit us up by opening an issue or contacting the maint
 @Abdelkader0 & @Mariangithubit 
 
 **ALX Front-end Graduation Project - 2024** 💻 
+
+VIDEO DEMO:
+https://vimeo.com/929831773?share=copy
+
