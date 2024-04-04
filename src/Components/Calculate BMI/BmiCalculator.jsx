@@ -68,12 +68,6 @@ function BmiCalculator() {
         <div className="left-cal">
 
           <div className="calculator-form">
-            <motion.span
-                initial= {{opacity: 0, x: -100}}
-                animate= {{opacity: 1, x: 0}}
-                transition= {{transition}}
-                exit= {{opacity: 0, x: 100}}>
-            </motion.span>
               <div className="btn age_gender">
                 <label>Age:</label>
                 <input
@@ -132,17 +126,6 @@ function BmiCalculator() {
         </div>
 
         <div className="right-cal" >
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 2 }}
-          ></motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 2 }}
-          ></motion.div>
 
           <div className="image-container">
             <motion.img
